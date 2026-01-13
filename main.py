@@ -1,16 +1,16 @@
-from biblioteca import *
+from biblioteca import Biblioteca, Book
 
-l=liblio("central")
+objetobiblioteca = Biblioteca("central")
 
-b1=bk("Python","Guido",1)
-b2=bk("Java","Gosling",2)
+book1= Book("Python","Guido",1)
+book2= Book("Java","Gosling",2)
 
-l.addb(b1)
-l.addb(b2)
+objetobiblioteca.addb(book1)
+objetobiblioteca.addb(book2)
 
-l.show()
+objetobiblioteca.show()
 
-print(b1.prest())
-print(b1.prest())
-b1.ret()
-print(b1.prest())
+print(book1.lend())
+print(book1.lend())
+book1.back()
+print(book1.lend())
