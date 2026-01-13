@@ -2,8 +2,8 @@ from biblioteca import Biblioteca, Book
 
 objetobiblioteca = Biblioteca("central")
 
-book1= Book("Python","Guido",1)
-book2= Book("Java","Gosling",2)
+book1 = Book("Python", "Guido", 1)
+book2 = Book("Java", "Gosling", 2)
 
 objetobiblioteca.addb(book1)
 objetobiblioteca.addb(book2)
